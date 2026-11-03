@@ -1,11 +1,11 @@
-using UnityEngine;
+ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 public class OpenBook : MonoBehaviour
 {
 
     public GameObject Notebook_Cover;
-    public HingeJoint HingeJoint;
+    public HingeJoint myHinge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
