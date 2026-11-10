@@ -1,23 +1,36 @@
- using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+
 public class OpenBook : MonoBehaviour
 {
-
     public GameObject Notebook_Cover;
+    
+    // This class variable will now properly hold the reference
     public HingeJoint myHinge;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        var myHinge = Notebook_Cover.GetComponent<HingeJoint>();
-        myHinge.useMotor = false;
+        // REMOVED 'var' so it assigns to the class variable above, not a local one
+        myHinge = Notebook_Cover.GetComponent<HingeJoint>();
+        
+        // CHANGED 'HingeJoint' to 'myHinge'
+        if (myHinge != null)
+        {
+            myHinge.useMotor = false;
+        }
     }
 
-    // Update is called once per frame
     public void OpenUp()
     {
-        HingeJoint.useMotor = true;
-        
+        // CHANGED 'HingeJoint' to 'myHinge'
+        if (myHinge != null)
+        {
+            myHinge.useMotor = true;
+        }
+        else
+        {
+            Debug.LogError("HingeJoint component is missing from the Notebook_Cover!", this);
+        }
     }
 }
