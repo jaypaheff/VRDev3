@@ -3,7 +3,6 @@
   <Project Path="Unity.XR.OpenXR.Editor.Tests.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="UnityEngine.XR.OpenXR.CodeSamples.Editor.Tests.csproj" />
-  <Project Path="AnimaProxima.RacingPack.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
   <Project Path="Unity.XR.OpenXR.Editor.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
@@ -12,7 +11,6 @@
   <Project Path="Unity.XR.OpenXR.Tests.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
   <Project Path="Unity.XR.OpenXR.Features.MetaQuestSupport.csproj" />
-  <Project Path="AnimaProxima.RacingPack.Editor.csproj" />
   <Project Path="Unity.XR.OpenXR.Features.RuntimeDebugger.csproj" />
   <Project Path="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.csproj" />
   <Project Path="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj" />
